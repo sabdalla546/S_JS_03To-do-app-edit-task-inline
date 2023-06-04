@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgb(248, 87, 28);
+    --secondary-color: #fff;
+}
+
+body {
+    margin: 1.2rem 8rem;
+    background-color: rgb(34, 32, 32);
+    color: var(--secondary-color);
+}
+.container {
+    padding: 1rem;
+}
+
+.container h1 {
+    text-align: center;
+    color: var(--main-color);
+    padding: 1rem;
+    font-size: 2.2rem;
+}
+#Add-Task {
+    text-align: center;
+}
+#Add-Task input {
+    border: none;
+    width: 40%;
+    height: 1.8rem;
+    border-radius: .8rem;
+}
+#Add-Task input:focus {
+    outline-color: var(--main-color);
+}
+
+#Add-Task #add {
+    background-color: var(--main-color);
+    cursor: pointer;
+    border: none;
+    width: 8%;
+    height: 1.8rem;
+    border-radius: .8rem;
+}
+.todo-list-item .list-header{
+    border-bottom: 1px solid var(--main-color);
+    padding: 1.2rem 0;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.todo-list-item .todo-body .task-content{
+    border-bottom: 1px solid var(--main-color);
+    padding: 1.2rem 0;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.edit,.save {
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: green;
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.8rem;
+}
+#Priority-item,#task-name-item{
+    cursor: pointer;
+}
+.delete ,.cancle{
+    cursor: pointer;
+    background-color: rgb(161, 0, 0);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.8rem;
+}
+
+.update {
+    display: none;
+}
